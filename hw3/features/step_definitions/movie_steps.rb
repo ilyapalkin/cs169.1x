@@ -6,7 +6,6 @@ Given /the following movies exist/ do |movies_table|
     # you should arrange to add that movie to the database here.
     Movie.create!(movie)
   end
-  @all_movies_count = movies_table.hashes.count
 end
 
 # Make sure that one string (regexp) occurs before or after another one
@@ -15,7 +14,7 @@ end
 Then /I should see "(.*)" before "(.*)"/ do |e1, e2|
   #  ensure that that e1 occurs before e2.
   #  page.body is the entire content of the page as a string.
-  flunk "Unimplemented"
+  page.body.should match /#{e1}.+#{e2}/m
 end
 
 # Make it easier to express checking or unchecking several boxes at once
@@ -49,7 +48,7 @@ end
 
 Then /I should see all of the movies/ do
 	# ensure that all movies are shown.
-	page.all('#movies tbody tr').count.should == @all_movies_count
+	page.all('#movies tbody tr').count.should be Movie.count()
 end
 
 
