@@ -3,5 +3,7 @@
 *~
 TAGS
 db/schema.rb
+.bundle
+tmp/*
 log/
 db/*.sqlite3
