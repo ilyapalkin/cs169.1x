@@ -48,7 +48,7 @@ class MoviesController < ApplicationController
 
   def edit
     @movie = Movie.find params[:id]
-  end
+  end	
 
   def update
     @movie = Movie.find params[:id]
@@ -60,7 +60,7 @@ class MoviesController < ApplicationController
   def same_director
     @movie = Movie.find params[:id]
     unless @movie.director.empty?
-      @movies = Movie.find_all_by_director(@movie.director)
+      @movies = Movie.by_director(@movie.director)
     else
       flash[:notice] = "'#{@movie.title}' has no director info."
       redirect_to movies_path
@@ -68,7 +68,7 @@ class MoviesController < ApplicationController
   end
 
   def destroy
-    @movie = Movie.find(params[:id])
+    @movie = Movie.find params[:id]
     @movie.destroy
     flash[:notice] = "Movie '#{@movie.title}' deleted."
     redirect_to movies_path
