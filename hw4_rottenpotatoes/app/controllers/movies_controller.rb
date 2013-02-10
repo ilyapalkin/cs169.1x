@@ -57,7 +57,7 @@ class MoviesController < ApplicationController
     redirect_to movie_path(@movie)
   end
   
-  def by_director
+  def same_director
     @movie = Movie.find params[:id]
     unless @movie.director.empty?
       @movies = Movie.find_all_by_director(@movie.director)

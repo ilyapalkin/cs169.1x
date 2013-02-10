@@ -12,5 +12,6 @@ end
 
 Then /the director of "(.*)" should be "(.*)"/ do |title, director|
   # ensure that that title occurs before director.
+  Movie.find_by_title(title).director.should == director
   page.body.should match /#{title}.+Director:.+#{director}/m
 end
