@@ -6,4 +6,5 @@ db/schema.rb
 .bundle
 tmp/*
 log/
+coverage/
 db/*.sqlite3
