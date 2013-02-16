@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
 *.rbc
 *.sassc
 .sass-cache
@@ -16,22 +14,3 @@ capybara-*.html
 **.orig
 rerun.txt
 pickle-email-*.html
-=======
-=======
->>>>>>> hw4_rottenpotatoes/master
-#*
-\#*\#
-*~
-TAGS
-db/schema.rb
-<<<<<<< HEAD
-log/
-db/*.sqlite3
->>>>>>> hw3_rottenpotatoes/master
-=======
-.bundle
-tmp/*
-log/
-coverage/
-db/*.sqlite3
->>>>>>> hw4_rottenpotatoes/master
