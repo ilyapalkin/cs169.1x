@@ -1,20 +1,18 @@
-saas-cs169.1x
-=============
+# BerkeleyX: CS169.1x Software as a Service
 
-BerkeleyX: CS169.1x Software as a Service
+CS169.1x teaches the fundamentals for engineering long-lasting software 
+using highly-productive Agile techniques to develop Software as a Service (SaaS) using Ruby on Rails.
 
-HW1 - HowTo
-=============
+## Homework 1: Ruby calisthenics
 TODO:
 
-HW2 - HowTo
-=============
+## Homework 2: Introduction to Rails
+TODO:
+http://rp-hw2.herokuapp.com
+
+
+## Homework 3: Behaviour-driven design
 TODO:
 
-HW3 - HowTo
-=============
-TODO:
-
-HW4 - HowTo
-=============
+## Homework 4: BDD ang TDD cycle
 TODO:
